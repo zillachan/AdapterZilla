@@ -233,7 +233,7 @@ public class AdapterUtil<T> {
             return ctor.newInstance(view);
         } catch (Exception e) {
             Log.e(e.getMessage());
-            Log.e("==Error:getConstructorInstance");
+            e.printStackTrace();
         }
         return null;
     }
